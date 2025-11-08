@@ -11,17 +11,12 @@ This project implements **complete data preprocessing for 3D meshes**, a fundame
 - ✅ **Quantization**: Discretizing coordinates into 1024 bins
 - ✅ **Error Analysis**: Measuring reconstruction accuracy with MSE, MAE, RMSE
 - ✅ **Visualization**: Generating plots and 3D visualizations
-- ✅ **Bonus Tasks**: Rotation-invariant normalization and adaptive quantization
+- ✅ **Tasks**: Rotation-invariant normalization and adaptive quantization
 
-**Total Marks: 100 + 30 Bonus**
 
 ---
 
 ## 🚀 Quick Start - How to Execute
-
-### Prerequisites
-- Python 3.8 or higher installed
-- Virtual environment activated (recommended)
 
 ### Step 1: Install Dependencies
 ```bash
@@ -45,8 +40,6 @@ The project includes pre-generated sample meshes. To view or regenerate:
 # Option B: Regenerate sample meshes (optional)
 python generate_sample_meshes.py
 
-# Option C: Add your own .obj meshes to data/ folder
-```
 
 ### Step 3: Run Main Pipeline
 Execute the complete normalization, quantization, and error analysis:
@@ -137,10 +130,7 @@ python visualize_states.py
 # 8. Create PDF report using generated assets
 # (Use images from output/ folders in your PDF)
 
-# 9. Package submission
-# Copy your REPORT.pdf to submission/ folder
-Compress-Archive -Path submission\* -DestinationPath submission.zip -Force
-```
+
 
 ### 🔍 Individual Module Testing
 
@@ -271,7 +261,6 @@ normalized = centered / max_distance
 
 ---
 
-### 🌟 Bonus Tasks (30 Marks)
 
 **Implementation:** `seam_tokenization.py`, `visualize_seams.py`
 
@@ -723,26 +712,6 @@ submission.zip
 
 ---
 
-## 💡 Tips for Success
-
-### Code Quality
-- ✅ Use meaningful variable names
-- ✅ Add comments explaining complex sections
-- ✅ Follow consistent formatting
-- ✅ Handle errors gracefully
-
-### Analysis Quality
-- ✅ Compare both normalization methods
-- ✅ Explain why differences occur
-- ✅ Use visualizations to support claims
-- ✅ Provide quantitative comparisons (MSE, MAE)
-
-### Report Quality
-- ✅ Clear structure with sections
-- ✅ Include all required plots
-- ✅ Explain formulas and methods
-- ✅ Write in your own words
-- ✅ Provide thoughtful analysis
 
 ### Common Observations
 - **Min-Max** typically has lower reconstruction error
@@ -752,49 +721,6 @@ submission.zip
 
 ---
 
-## 📖 Additional Resources
-
-### Mesh File Sources
-- [Stanford 3D Scanning Repository](http://graphics.stanford.edu/data/3Dscanrep/)
-- [Common 3D Test Models](https://github.com/alecjacobson/common-3d-test-models)
-- [Thingi10K Dataset](https://ten-thousand-models.appspot.com/)
-- [Princeton Shape Benchmark](http://shape.cs.princeton.edu/benchmark/)
-
-### Learning Resources
-- [NumPy Documentation](https://numpy.org/doc/)
-- [Trimesh Documentation](https://trimsh.org/)
-- [Open3D Tutorial](http://www.open3d.org/docs/)
-- [Matplotlib Gallery](https://matplotlib.org/stable/gallery/index.html)
-
-### Related Concepts
-- 3D Mesh Processing
-- Data Normalization Techniques
-- Quantization Methods
-- Error Analysis and Metrics
-- Computer Graphics Fundamentals
-
----
-
-## 🏆 Grading Breakdown (100 + 30 Bonus)
-
-| Task | Marks | Criteria |
-|------|-------|----------|
-| **Task 1: Load & Inspect** | 20 | Correct loading, statistics, visualization |
-| **Task 2: Normalize & Quantize** | 40 | Two methods implemented, quantization works, meshes saved |
-| **Task 3: Error Analysis** | 40 | Reconstruction works, error metrics computed, plots generated, written analysis |
-| **Bonus: Advanced Features** | +30 | Rotation invariance, adaptive quantization, thorough analysis |
-| **Total** | 100-130 | |
-
----
-
-## 🤝 Contributing & Feedback
-
-This is an educational project. If you find issues or have suggestions:
-1. Review the code and understand what it does
-2. Test modifications with sample meshes
-3. Document your findings
-
----
 
 ## 📄 License
 
@@ -808,21 +734,6 @@ This project is created for educational purposes as part of a 3D graphics and AI
 
 ---
 
-## 👨‍💻 About This Project
-
-**Assignment:** Mesh Normalization, Quantization, and Error Analysis  
-**Context:** Preparing 3D data for AI models like SeamGPT  
-**Focus:** Data preprocessing fundamentals  
-**Total Marks:** 100 (+ 30 bonus)
-
-**Key Learning Outcomes:**
-1. Understand 3D mesh data structures
-2. Implement normalization techniques
-3. Apply quantization for data compression
-4. Measure and analyze reconstruction errors
-5. Compare different preprocessing methods
-
----
 
 ## 🚀 Quick Commands Reference
 
@@ -953,29 +864,4 @@ rm -rf output       # Linux/Mac
 python main.py
 ```
 
----
 
-## 📞 Support
-
-For questions about the assignment:
-- Review the assignment PDF
-- Check `GET_STARTED.md` for setup help
-- Check `QUICKSTART.md` for quick reference
-- Review code comments for implementation details
-
----
-
-## ✨ Acknowledgments
-
-- **Trimesh** for mesh loading capabilities
-- **Open3D** for 3D visualization
-- **NumPy** for numerical computing
-- **Matplotlib** for plotting
-
----
-
-**Ready to start?** Run `setup.bat` (Windows) or `setup.sh` (Linux/Mac) to begin! 🎓
-
----
-
-*Last Updated: 2025-11-07*
